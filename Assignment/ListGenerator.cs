@@ -8,6 +8,7 @@ using System.Xml.Linq;
 namespace Assignment
 {
 
+
 	class Product
 	{
 		public long ProductID { get; set; }
