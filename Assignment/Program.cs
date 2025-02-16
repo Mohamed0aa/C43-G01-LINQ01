@@ -89,6 +89,19 @@ namespace Assignment
             //}
             #endregion
 
+            #region q6 : 3. Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
+            ////1
+            //var result = ProductList.Select(x => new { x.ProductID, x.ProductName, Price = x.UnitPrice });
+
+            ////2
+            //result = from x in ProductList
+            //         select new { x.ProductID, x.ProductName, Price = x.UnitPrice };
+
+
+            //foreach (var item in result) 
+            //    Console.WriteLine(item);
+            #endregion
+
         }
     }
 }
