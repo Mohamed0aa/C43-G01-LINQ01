@@ -47,7 +47,7 @@ namespace Assignment
             //var result = Arr.Where((x, i) => x.Length < i)
             //           .Select(i=>i);
 
-            //2 indexed where
+            ////2 indexed where not valid in query syntax
 
 
             //foreach(var x in result) 
@@ -100,6 +100,21 @@ namespace Assignment
 
             //foreach (var item in result) 
             //    Console.WriteLine(item);
+            #endregion
+
+
+            #region q7 : 4. Determine if the value of ints in an array match their position in the array.
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            ////1
+            //var result=Arr.Select((x,i)=>x==i);
+
+            ////2 indexed select not valid in query syntax
+
+            //foreach(var x in result) 
+            //    Console.WriteLine(x);
+
+
             #endregion
 
         }
