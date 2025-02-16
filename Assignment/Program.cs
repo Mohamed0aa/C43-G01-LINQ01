@@ -1,4 +1,5 @@
 ﻿
+using System.Net.Http.Headers;
 using static Assignment.ListGenerator;
 namespace Assignment
 {
@@ -39,7 +40,7 @@ namespace Assignment
             #endregion
 
 
-            #region 3. Returns digits whose name is shorter than their value.
+            #region q3: Returns digits whose name is shorter than their value.
             //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
             ////1
@@ -47,11 +48,28 @@ namespace Assignment
             //           .Select(i=>i);
 
             //2 indexed where
-            
+
 
             //foreach(var x in result) 
             //    Console.WriteLine(x);
-            
+
+            #endregion
+
+            #region q4 : 1. Return a sequence of just the names of a list of products.
+
+            ////1
+            //var result = ProductList.Select(x => x.ProductName);
+
+
+
+            ////2
+            //result=from x in ProductList
+            //       select x.ProductName;
+
+
+            //foreach (var item in result) 
+            //    Console.WriteLine(item);
+
             #endregion
         }
     }
