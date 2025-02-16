@@ -147,7 +147,7 @@ namespace Assignment
             //    var r = CustomerList.SelectMany(c => c.Orders!).
             //                         Where(c=>c.Total< (decimal)500.00);
 
-           
+
 
             ////2
             //     r = from c in CustomerList
@@ -156,6 +156,25 @@ namespace Assignment
             //        select o;
 
             //foreach (var c in r) 
+            //    Console.WriteLine(c);
+            #endregion
+
+
+
+            #region  q10 : 7. Select all orders where the order was made in 1998 or later.
+            ////1
+            //var r = CustomerList.SelectMany(c => c.Orders!).
+            //                     Where(c => c.OrderDate.Year <= 1998);
+
+
+
+            ////2
+            //r = from c in CustomerList
+            //    from o in c.Orders!
+            //    where o.OrderDate.Year <= 1998
+            //    select o;
+
+            //foreach (var c in r)
             //    Console.WriteLine(c);
             #endregion
 
