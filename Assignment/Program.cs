@@ -36,7 +36,23 @@ namespace Assignment
             //foreach (var item in result)
             //    Console.WriteLine(item);
 
-                #endregion
+            #endregion
+
+
+            #region 3. Returns digits whose name is shorter than their value.
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            ////1
+            //var result = Arr.Where((x, i) => x.Length < i)
+            //           .Select(i=>i);
+
+            //2 indexed where
+            
+
+            //foreach(var x in result) 
+            //    Console.WriteLine(x);
+            
+            #endregion
         }
     }
 }
