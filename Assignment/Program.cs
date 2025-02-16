@@ -141,6 +141,25 @@ namespace Assignment
             #endregion
 
 
+            #region q9 : 6. Select all orders where the order total is less than 500.00.
+
+            ////1
+            //    var r = CustomerList.SelectMany(c => c.Orders!).
+            //                         Where(c=>c.Total< (decimal)500.00);
+
+           
+
+            ////2
+            //     r = from c in CustomerList
+            //        from o in c.Orders!
+            //        where o.Total< (decimal)500.00
+            //        select o;
+
+            //foreach (var c in r) 
+            //    Console.WriteLine(c);
+            #endregion
+
+
 
 
         }
