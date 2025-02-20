@@ -16,8 +16,13 @@ namespace Demo
 		public decimal UnitPrice { get; set; }
 		public int UnitsInStock { get; set; }
 
+   //     public override int GetHashCode()
+   //     {
+			//return HashCode.Combine(this);
+   //     }
 
-		public override string ToString()
+
+        public override string ToString()
 			=> $"ProductID: {ProductID}, ProductName: {ProductName}, Category: {Category}, UnitPrice: {UnitPrice:c}, UnitsInStock: {UnitsInStock}";
 
 	}

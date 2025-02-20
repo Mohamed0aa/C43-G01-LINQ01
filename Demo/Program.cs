@@ -195,9 +195,9 @@ namespace Demo
             //var r = CustomerList.SelectMany((c,i) => c.Orders!, (cc, oo) => new { cc.CustomerName, oo });
 
 
-           //var r = from c in CustomerList
-           //     from object o in c.Orders!
-           //     select new { Customer = c.CustomerName, Order = o };
+            //var r = from c in CustomerList
+            //     from object o in c.Orders!
+            //     select new { Customer = c.CustomerName, Order = o };
 
 
 
@@ -205,15 +205,34 @@ namespace Demo
 
 
             #endregion
-
 
             #region Ordering operator
             //var r= ProductList.OrderBy(p=>p.UnitPrice).ThenBy(p=>p.UnitsInStock);
             #endregion
-            
 
 
+            #region Element operator [imidiate operator]
+            //ProductList=new List<Product>();
 
+            // var result = ProductList.First(); //throw exception if caller is Empty
+
+            //var result = ProductList.Last();//throw exception if caller is Empty
+
+            //var result = ProductList.First(p =>p.UnitPrice>=100);
+
+            //var result = ProductList.FirstOrDefault(/*Defualt*/new Product { ProductName = "Def" });
+
+            //var result = ProductList.FirstOrDefault(p =>p.UnitPrice==47586924,new Product { ProductName = "Def" });
+            //var result = ProductList.FirstOrDefault();not throw exception
+            //var result = ProductList.ElementAt(0); //throw exception if caller is Empty
+            // var result = ProductList.ElementAtOrDefault(600000);
+            //var result = ProductList.Single();//throw exception if caller is Empty or is there more than one element
+            //var result = ProductList.Single(p=>p.ProductName=="moha");
+            var result = ProductList.SingleOrDefault();// throw exception if there more one element
+
+            Console.WriteLine(result);
+
+            #endregion
 
         }
     }
