@@ -1,4 +1,6 @@
 ﻿using System.Collections.Concurrent;
+using System.Text.RegularExpressions;
+using System.Xml.Schema;
 using static Demo.ListGenerator;
 namespace Demo
 {
@@ -228,10 +230,87 @@ namespace Demo
             // var result = ProductList.ElementAtOrDefault(600000);
             //var result = ProductList.Single();//throw exception if caller is Empty or is there more than one element
             //var result = ProductList.Single(p=>p.ProductName=="moha");
-            var result = ProductList.SingleOrDefault();// throw exception if there more one element
+            //var result = ProductList.SingleOrDefault();// throw exception if there more one element
 
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
 
+            #endregion
+
+
+            #region aggregate operator
+            //count sum avg max min aggregate
+            #endregion
+
+            #region casting operator
+
+            #endregion
+
+            #region Generation operator
+
+            //is class member of [Enumrable]
+
+            //Enumerable.Repeat(ProductList[0],3);
+            //Enumerable.Empty<Product>();
+            //Enumerable.Range(0, 100);
+            #endregion
+
+            #region set operator
+            //union family
+            //var s1 = Enumerable.Range(1, 100);
+            //var s2= Enumerable.Range(51,100);
+
+            //var result = s1.Union(s2);//union without dublicate
+            //result=s1.Concat(s2);
+            //result = s2.Except(s1);
+            //result=s2.Intersect(s2);
+
+            //foreach (var item in result ) 
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+
+            #region Quntifier operator
+            //return one value bool
+            // any  all  contain  SequenceEqual
+            //var s1 = Enumerable.Range(10, 100);
+            //var s2 = Enumerable.Range(10, 100);
+            //var rr = s1.Any(o => o % 2 == 0);
+            //rr=s1.All(o=>o%2==0);
+            //rr = s1.SequenceEqual(s2);
+            //rr = s1?.Contains(4)??false;
+            //Console.WriteLine(rr);
+
+            #endregion
+
+
+            #region Zip-Operator
+            //List<string> words=new List<string>{ "one", "two", "tree" };
+            //List<int> num = new List<int> { 1,2,3,4,5,6};
+            //var mo = words.Zip(num).ToDictionary();
+
+            //foreach (var i in mo)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+
+            #region Grouping  operator
+
+            #endregion
+
+            #region partition [paggination ]
+            //-- Take ,TakeLast ,Skip ,SkipLast ,TakeWhile, SkipWhile
+
+
+            #endregion
+
+            #region let , into
+            //used in query syntacx
+            //List<string> list = new List<string>() {"MOhamed","ahmed","salam" };
+
+            //Regex.Replace("mo","DCNDUN","S");
             #endregion
 
         }
